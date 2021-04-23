@@ -1,0 +1,1 @@
+Valgrind did not find any memory issues, so there is a low chance that there will be any when running the program for any file.
