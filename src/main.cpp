@@ -19,6 +19,7 @@ using namespace std;
 int countLine(string pName);
 int countChar(string pName);
 
+#if !defined(CATCH_CONFIG_MAIN)
 /**
  * @brief Attempts to read a file from the command line into a string and then outputs its number of lines and characters.
  * 
@@ -47,6 +48,7 @@ int main(int argc, char const *argv[]) {
 
     return EXIT_SUCCESS;
 }
+#endif
 
 /**
  * @brief Counts and outputs the total number of new lines in the string.
