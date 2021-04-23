@@ -1,0 +1,2 @@
+The only issue that cppcheck found was a performance related issue. For an iterator I'm using, it's recommending me that I should iterate it using '++it' instead of 'it++' since it's alone. And it makes sense since I don't use the value before incrementing and just need to move it.
+Valgrind did not find any memory issues, so there is a low chance that there will be any when running the program for any file.

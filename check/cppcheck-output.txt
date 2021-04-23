@@ -1,0 +1,5 @@
+src/main.cpp:59:66: performance: Prefer prefix ++/-- operators for non-primitive types. [postfixOperator]
+    for (string::iterator it = pName.begin(); it != pName.end(); it++) {
+                                                                 ^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
+

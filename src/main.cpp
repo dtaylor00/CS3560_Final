@@ -56,7 +56,7 @@ int main(int argc, char const *argv[]) {
  */
 int countLine(string pName) {
     int count = 0;
-    for (string::iterator it = pName.begin(); it != pName.end(); it++) {
+    for (string::iterator it = pName.begin(); it != pName.end(); ++it) {
         if (*it == '\n') count++;
     }
     cout << count << " Lines" << endl;
