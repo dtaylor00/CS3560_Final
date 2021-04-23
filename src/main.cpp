@@ -1,3 +1,14 @@
+/**
+ * @file main.cpp
+ * @author Dakota Taylor
+ * @brief This program reads in a files from the command line and outputs its number of lines and characters.
+ * @version 0.1
+ * @date 2021-04-22
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include <fstream>
 #include <iostream>
 
@@ -8,6 +19,13 @@ using namespace std;
 int countLine(string pName);
 int countChar(string pName);
 
+/**
+ * @brief Attempts to read a file from the command line into a string and then outputs its number of lines and characters.
+ * 
+ * @param argc the number of command line options
+ * @param argv the command line options
+ * @return int the exit code
+ */
 int main(int argc, char const *argv[]) {
     if (argc > 1) {
         std::ifstream input(argv[1]);
@@ -30,6 +48,12 @@ int main(int argc, char const *argv[]) {
     return EXIT_SUCCESS;
 }
 
+/**
+ * @brief Counts and outputs the total number of new lines in the string.
+ * 
+ * @param pName the string
+ * @return int  number of lines
+ */
 int countLine(string pName) {
     int count = 0;
     for (string::iterator it = pName.begin(); it != pName.end(); it++) {
@@ -39,6 +63,12 @@ int countLine(string pName) {
     return count;
 }
 
+/**
+ * @brief Counts and outputs the total number of characters in the string.
+ * 
+ * @param pName the string
+ * @return int number of character
+ */
 int countChar(string pName) {
     int count = pName.size();
     cout << count << " Characters" << endl;
